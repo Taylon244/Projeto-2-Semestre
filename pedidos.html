@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Faça seu pedido | Pizza Paulista 10</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="fotos/pizza_paulista10_favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pedidos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-main">PIZZA <strong>PAULISTA 10</strong></span>
+                <span class="logo-sub">TRADIÇÃO E SABOR</span>
+            </a>
+
+            <a href="index.html" class="btn btn-outline">
+                VOLTAR AO SITE
+            </a>
+
+        </div>
+    </header>
+
+
+    <main class="orders-page">
+
+        <div class="orders-container">
+
+            <span class="section-tag">PIZZA PAULISTA 10</span>
+
+            <h1>
+                SUA PRÓXIMA PIZZA
+                <span>ESTÁ AQUI.</span>
+            </h1>
+
+            <p>
+                Escolha seu canal favorito e faça seu pedido.
+                Estamos esperando por você!
+            </p>
+
+
+            <div class="orders-grid">
+
+                <a href="https://w.app/alzpyr"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="order-card whatsapp">
+
+                    <span class="order-icon">💬</span>
+
+                    <h2>WhatsApp</h2>
+
+                    <p>Peça diretamente pelo WhatsApp.</p>
+
+                    <span class="order-action">FAZER PEDIDO →</span>
+
+                </a>
+
+
+                <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/pizza-paulista-10-cidade-mae-do-ceu/5352e9bc-ee2b-40bc-b425-87aef7a1db58?utm_medium=share"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="order-card">
+
+                    <span class="order-icon">🍕</span>
+
+                    <h2>iFood</h2>
+
+                    <p>Encontre nossa loja no iFood.</p>
+
+                    <span class="order-action">PEDIR PELO IFOOD →</span>
+
+                </a>
+
+
+                 <a href="https://url-eu.mykeeta.com/v89UD9vz"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="order-card">
+
+                    <span class="order-icon">🥡</span>
+
+                    <h2>Keeta</h2>
+
+                    <p>Peça sua pizza pelo aplicativo.</p>
+
+                    <span class="order-action">PEDIR PELA KEETA →</span>
+
+                </a>
+
+            </div>
+
+            <a href="index.html" class="back-link">
+                ← Voltar para a página inicial
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container copyright">
+            <p>© <span id="year"></span> Pizza Paulista 10. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>

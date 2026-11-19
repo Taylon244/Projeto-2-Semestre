@@ -1,0 +1,99 @@
+
+.orders-page {
+    min-height: 100vh;
+    padding: 150px 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(circle at top, #29211d, #101010 65%);
+}
+
+.orders-container {
+    width: 100%;
+    max-width: 950px;
+    text-align: center;
+}
+
+.orders-container h1 {
+    font-size: clamp(42px, 7vw, 65px);
+    margin: 20px 0;
+}
+
+.orders-container h1 span {
+    color: var(--gold);
+    display: block;
+}
+
+.orders-container > p {
+    margin-bottom: 45px;
+}
+
+.orders-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.order-card {
+    padding: 30px;
+    background: #202020;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.order-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+}
+
+.order-card.whatsapp {
+    border-top: 3px solid #25D366;
+}
+
+.order-icon {
+    font-size: 35px;
+}
+
+.order-card h2 {
+    font-size: 30px;
+    margin: 15px 0 8px;
+}
+
+.order-card p {
+    font-size: 13px;
+}
+
+.order-action {
+    display: block;
+    margin-top: 25px;
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.back-link:hover {
+    color: var(--gold);
+}
+
+@media (max-width: 600px) {
+
+    .orders-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .orders-page {
+        padding-top: 125px;
+    }
+
+}
